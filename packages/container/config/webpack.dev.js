@@ -1,5 +1,4 @@
 const { merge } = require('webpack-merge');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const commonConfig = require('./webpack.common.js');
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const path = require("path");
@@ -30,10 +29,7 @@ const devConfig = {
           requiredVersion: deps["react-dom"]
         }
       }
-    }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname,"../","public/index.html")
-    })
+    })    
   ]
 }
 module.exports = merge(commonConfig, devConfig);

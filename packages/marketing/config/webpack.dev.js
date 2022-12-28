@@ -32,9 +32,6 @@ const devConfig = {
           requiredVersion: deps["react-dom"]
         }
       }
-    }),
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname,"../","public/index.html")
     })
   ]
 }
