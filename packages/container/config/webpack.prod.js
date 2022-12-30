@@ -9,6 +9,8 @@ const prodConfig = {
   output:{
     path: path.resolve(__dirname, "..", "./dist"),
     filename: "[name].[contenthash:8].js",
+    publicPath: "/container/latest/"
+    
   },
   plugins: [
     new ModuleFederationPlugin({
