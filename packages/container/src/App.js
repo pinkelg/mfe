@@ -4,7 +4,7 @@ import {Marketing} from './components/Marketing';
 export default () => {
   return (
     <div>
-      <div>Marketing</div>
+      <div>Marketings</div>
       <hr/>
       <Marketing/>
     </div>
